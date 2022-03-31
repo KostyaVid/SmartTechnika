@@ -1,0 +1,46 @@
+$color_background: #FFFFFF;
+$color_card: #EDF2F6;
+$color_text: #070C11;
+$grey_text: #838688;
+
+@font-face {
+   font-family: Exo2;
+   src: url(../fonts/Exo2-Bold.woff2);
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: Exo2;
+   src: url(../fonts/Exo2-Medium.woff2);
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: Exo2;
+   src: url(../fonts/Exo2-Regular.woff2);
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: Exo2;
+   src: url(../fonts/Exo2-SemiBold.woff2);
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: Inter;
+   src: url(../fonts/Inter-Regular.woff2);
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: Roboto;
+   src: url(../fonts/Roboto-Regular.woff2);
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: SourceSansPro;
+   src: url(../fonts/SourceSansPro-Regular.woff2);
+   font-weight: 400;
+}
