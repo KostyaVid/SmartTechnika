@@ -1,2 +1,2 @@
 # SmartTechnika
-# This is a study project
+# This is a learning project
