@@ -294,7 +294,7 @@ menu{
    transition: top 0.5s ease-out;
 }
 
-.catalog__wrapper_active{
+.catalog__wrapper_active{   
    top: 0;
 }
 
@@ -306,6 +306,11 @@ menu{
    position:absolute;
    top: 140px;
    z-index: 2;
+   display: none;
+}
+
+.catalog_active{
+   display: block;
 }
 
 @media (max-width:1200px){
@@ -324,7 +329,7 @@ menu{
       z-index: 6;
    }
 
-   .cotalog__item{
+   .catalog__item{
       width: 50%;
    }
 }
@@ -377,9 +382,6 @@ menu{
    flex-direction: column;
    align-items: center;
    justify-content:center;
-   // &:hover{
-   //    background-color: #4878A6;
-   // }
 }
 
 
@@ -414,6 +416,92 @@ menu{
    transition: all 0.2s ease-in-out;
    background-color: #4878A6;
 }
+
+.menu-else {
+   padding: 0 50px;
+   display: none;
+   background-color: #EDF2F6;
+   height: 100%;
+   margin: 27px 20px 64px 20px;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+
+.menu-else_active{
+   display: block;
+}
+
+
+.menu-else__title {
+   margin-bottom: 40px;
+   padding-top: 50px;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 130%;
+   color: #070C11;
+}
+.menu-else__item {
+   display: block;
+   height: 46px;
+   border-bottom: 1px #C8CACB solid;
+   &:hover{
+      background-color: #DAE4ED;
+   }
+}
+
+.menu-else__item div{
+   font-weight: 500;
+   font-size: 16px;
+   color: #070C11;
+   line-height: 46px;
+}
+
+.menu-search {
+   padding: 0 50px;
+   display: none;
+   background-color: #EDF2F6;
+   height: 100%;
+   margin: 27px 20px 64px 20px;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+
+.menu-search_active{
+   display: block;
+}
+
+.menu-search__search{
+   width: 100%;
+   height: 48px;
+   border: 1px #4878A6 solid;
+   border-radius: 4px;
+   padding-left: 20px;
+   padding-right: 20px;
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   color: #0E1821;
+   &::placeholder{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #838688;
+   }
+}
+
+.menu-search__button{
+   margin-top: 50px;
+   float: right;
+   display: block;
+}
+
+.menu-search__button_cencel{
+   display: block;
+   margin-top: 50px;
+   float: right;
+}
+
 
 .hero{
    margin-top: 20px;
