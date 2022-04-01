@@ -6,7 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>SMART Техника</title>
    <link rel="shortcut icon" href="./images/src/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="css/app.min.css">
+   <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+   />
+   <link rel="stylesheet" href="./css/app.min.css">
 </head>
 <body>
 
@@ -31,6 +35,16 @@
             </div>
          </div>
       </header>
+      <div class="menu-profile">
+         <ul>
+            <li><a href="#"><div>Общие сведения</div></a></li>
+            <li><a href="#"><div>Личные данные</div></a></li>
+            <li><a href="#"><div>История покупок</div></a></li>
+            <li><a href="#"><div>Избранное</div></a></li>
+            <li><a href="#"><div>Сменить пароль</div></a></li>
+            <li class="menu-profile__exit">Выйти</li>
+         </ul>
+      </div>
    </div>
 
 
@@ -129,7 +143,54 @@
       </div>
    </div>
 
+<div class="wrapper">
+   <section class="hero">
+      <div class="swiper">
+         <div class="swiper-wrapper">    
+           <div class="swiper-slide">
+              <a href="#" class="hero__slide">
+                 <img src="./images/dest/hero/new_watch.png" alt="Apple watch 6">
+                 <div class="hero__text">
+                    <p class="hero__title">Apple Watch Series 6</p>
+                    <p class="hero__subtext">уже в наличии</p>
+                 </div>
+              </a>
+           </div>
+           <div class="swiper-slide">
+            <a href="#" class="hero__slide">
+               <img src="./images/dest/hero/lake.jpg" alt="Iphone 12">
+               <div class="hero__text">
+                  <p class="hero__title">Iphone 12</p>
+                  <p class="hero__subtext">ночной режим</p>
+               </div>
+            </a>
+           </div>
+           <div class="swiper-slide">
+            <a href="#" class="hero__slide">
+               <img src="./images/dest/hero/new_watch.png" alt="Apple watch 6">
+               <div class="hero__text">
+                  <p class="hero__title">Apple Watch Series 6</p>
+                  <p class="hero__subtext">уже в наличии</p>
+               </div>
+            </a>
+           </div>
+           <div class="swiper-slide">
+            <a href="#" class="hero__slide">
+               <img src="./images/dest/hero/lake.jpg" alt="Iphone 12">
+               <div class="hero__text">
+                  <p class="hero__title">Iphone 12</p>
+                  <p class="hero__subtext">ночной режим</p>
+               </div>
+            </a>
+           </div>
+         </div>
+         <div class="swiper-pagination"></div>
+       </div>
+   </section>
+</div>
+  
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 </html>
