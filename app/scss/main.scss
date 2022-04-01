@@ -490,17 +490,12 @@ menu{
    }
 }
 
-.menu-search__button{
+.menu-else__buttons{
    margin-top: 50px;
-   float: right;
-   display: block;
+   display: flex;
+   justify-content:space-around;
 }
 
-.menu-search__button_cencel{
-   display: block;
-   margin-top: 50px;
-   float: right;
-}
 
 
 .hero{

@@ -98,6 +98,11 @@ document.querySelector('.menu-mobile__search').addEventListener('click', ()=>{
    setMenuMobile();
 });
 
+document.querySelector('.menu-search__button_cencel').addEventListener('click', ()=>{
+   clearMenuMobile();
+   menuMobile.search = false;
+});
+
 
 
 const swiper = new Swiper('.swiper', {
