@@ -25,6 +25,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-ttftowoff2": "^1.0.1",
     "gulp-uglify-es": "^3.0.0",
+    "micromodal": "^0.4.10",
     "swiper": "^8.0.7"
   }
 }
