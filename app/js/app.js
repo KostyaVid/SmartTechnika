@@ -33,7 +33,9 @@ const setMenuMobile = function(){
       document.querySelector('.catalog__wrapper').classList.toggle('catalog__wrapper_active');
       document.querySelector('.menu-mobile__catalog').classList.toggle('menu-mobile__catalog_active');
       document.querySelector('.catalog').classList.toggle('catalog_active'); 
-      document.querySelector('body').classList.add('body_overflow');   
+      if(window.screen.width<=1200){
+         document.querySelector('body').classList.add('body_overflow');
+      }
    }
 
    if(menuMobile.else)
