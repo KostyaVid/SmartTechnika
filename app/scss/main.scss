@@ -665,11 +665,26 @@ menu{
 }
 
 
+
+
 .component-title-filter a{
    font-weight: 500;
    font-size: 16px;   
    color: #2A5275;
    margin-left: 30px;
+   &:hover{
+      color: #070C11;
+   }
+   .component-title-filter_icon{
+      padding-left: 5px;
+      font-size: 18px;
+   }
+}
+
+.ad__news_filter{
+   font-weight: 500;
+   font-size: 16px;   
+   color: #2A5275; 
    &:hover{
       color: #070C11;
    }
@@ -688,6 +703,9 @@ menu{
    }
    .component-title-filter a{
       margin-left: 23px;
+   }
+   .ad__news_filter{
+      margin-left: 0;
    }
 }
 
@@ -921,6 +939,9 @@ menu{
 }
 .ad__img {
    height: 160px;
+   width: 160px;
+   object-fit:contain;
+   object-position: center;
 }
 
 @media (max-width:800px){
@@ -953,11 +974,12 @@ menu{
    height: 100vh;
    left: 0;top: 0;bottom: 0;right: 0;
    z-index: 99;
-   display: none;
+   transition: ease all 0.3s;
+   transform: translateY(100%);
 }
 
 .modal_active{
-   display: block;
+   transform: translateY(0%);
 }
 
 .modal__overlay{
@@ -1127,5 +1149,203 @@ menu{
    transition: all 0.2s ease-in-out;
    &:hover{
       transform: scale(1.02);
+   }
+}
+
+.modal__user-agreement{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 130%;
+   a{
+      color: #2A5275;
+   }
+}
+
+.ad__news{
+   display: block;
+   height: min-content;
+   padding: 30px 50px;
+}
+
+.ad__news_text{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 120%
+}
+
+.ad__news_title{
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 120%;
+}
+
+.ad__news_footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.ad__news-data{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 120%;
+   color: #838688;
+}
+
+@media (max-width:576px){
+   .ad__news-data{
+      display: none;
+   }
+}
+
+.footer{
+   background-color: #EDF2F6;
+   margin-top: 80px;
+   padding: 40px 0;
+}
+
+.footer__content{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-left: 10px;
+}
+
+@media (max-width:1200px){
+   .footer__content{
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 60px;
+   }
+}
+
+@media (max-width:576px){
+   .footer__content{
+      grid-template-columns: 1fr;
+      grid-row-gap: 40px;
+   }
+}
+
+.footer__maxWidth-column{
+   max-width: 244px;
+}
+
+.footer__logo{
+   width: 184px;
+   height: 60px;
+   object-fit: contain;
+   object-position: center;
+}
+
+.footer__tel{
+   display: block;
+   font-weight: 600;
+   font-size: 20px;
+   color: $color_text;
+}
+
+.footer__schedular{
+   font-weight: 400;
+   font-size: 16px; 
+   color: #838688;
+}
+
+.footer__address{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+}
+
+.footer__title{
+   font-weight: 600;
+   font-size: 20px;
+   color: #838688;
+}
+
+.footer__nav ul li a{
+   font-weight: 400;
+   font-size: 16px;
+   color: $color_text;
+}
+
+.footer__line{
+   margin-top: 40px;
+   width: 100%;
+   height: 1px;
+   background: #C8CACB;
+}
+
+.footer__sub-footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas: "rights icons designer";
+}
+
+.footer__rights{
+   font-weight: 400;
+   font-size: 16px;
+   color: #838688;
+   grid-area: rights;
+}
+
+.footer__designer{
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 12px;
+   color: #838688;
+   justify-self: right;
+   grid-area: designer;
+}
+
+.footer__icons{
+   display: flex;
+   width: 192px;
+   align-items: center;
+   justify-content: space-between;
+   justify-self: center;
+   grid-area: icons;
+}
+
+.footer__icons i{
+   color: #4878A6;
+   &:hover{
+      color: #2A5275;
+   }
+}
+
+@media (max-width:1200px){
+   .footer__sub-footer{ 
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "rights icons"
+                           "designer icons";
+   }
+   .footer__designer{
+      justify-self: left;
+      padding-top: 3px;
+   }
+   .footer__sub-footer{
+      margin-bottom: 64px;
+   }
+   .footer__icons{
+      justify-self: right;
+   }
+}
+
+@media (max-width:576px){
+   .footer__sub-footer{ 
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "icons"
+                           "rights"
+                           "designer";
+   }
+   .footer__designer{
+      justify-self: left;
+      padding-top: 3px;
+   }
+   .footer__rights{
+      margin-top: 20px;
+   }
+   .footer__icons{
+      justify-self: left;
    }
 }

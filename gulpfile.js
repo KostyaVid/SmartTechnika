@@ -22,7 +22,8 @@ function browsersync() {
 
 function scripts(){
    return src([ // Берем файлы из источников
-		//'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
+		'app/js/vendor.js',
+		'app/js/modals.js',
 		'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
 		])
 	.pipe(concat('app.min.js')) // Конкатенируем в один файл
@@ -85,6 +86,7 @@ function buildcopy() {
 		'app/js/**/*.min.js',
 		'app/images/dest/**/*',
 		'app/**/*.html',
+		'app/fonts/**/*',
 		], { base: 'app' }) // Параметр "base" сохраняет структуру проекта при копировании
 	.pipe(dest('dist')) // Выгружаем в папку с финальной сборкой
 }
