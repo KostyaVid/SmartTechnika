@@ -101,3 +101,15 @@ document.querySelector('.menu-search__button_cencel').addEventListener('click', 
    clearMenuMobile();
    menuMobile.search = false;
 });
+
+document.querySelectorAll('.like').forEach((element)=>{
+   element.addEventListener('click', ()=>{
+      element.classList.toggle('like_active');
+   });
+})
+
+document.querySelectorAll('.compare').forEach((element)=>{
+   element.addEventListener('click', ()=>{
+      element.classList.toggle('compare_active');
+   });
+})

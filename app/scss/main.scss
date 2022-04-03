@@ -826,7 +826,12 @@ menu{
    width: 48px;
    height: 48px;
    background-image: url('../images/dest/icons/like_in_card.svg');
+   transition: all 0.2s ease;
    cursor: pointer;
+}
+
+.like_active{
+   background-image: url('../images/dest/icons/like_in_card_active.svg');
 }
 
 .compare{
@@ -834,6 +839,11 @@ menu{
    height: 48px;
    background-image: url('../images/dest/icons/compare3.png');
    cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.compare_active{
+   background-image: url('../images/dest/icons/compare_in_card_active.svg');
 }
 
 .card__old-price{
@@ -975,7 +985,7 @@ menu{
    left: 0;top: 0;bottom: 0;right: 0;
    z-index: 99;
    transition: ease all 0.3s;
-   transform: translateY(100%);
+   transform: translateY(150%);
 }
 
 .modal_active{
@@ -1348,4 +1358,91 @@ menu{
    .footer__icons{
       justify-self: left;
    }
+}
+
+.menu-back{
+   margin-top: 40px;
+}
+
+.menu-back__nav a{
+   font-weight: 400;
+   font-size: 16px;
+   color: $color_text;
+   padding-right: 15px;
+}
+
+.menu-back__nav i{
+   font-weight: 400;
+   font-size: 16px;
+   color: $color_text;
+}
+
+.menu-back__nav span{
+   font-weight: 400;
+   font-size: 16px;
+   color: #838688;
+   padding-left: 15px;
+}
+
+.page-main{
+   margin-top: 40px;
+   max-width: 975px;
+   margin-left: 0;
+}
+
+.page-main__title{
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 130%;
+}
+
+.main__p{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   margin-top: 30px;
+}
+
+.main__h{
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+   margin-top: 40px;
+}
+
+.page-about__change{
+   margin-top: 40px;
+   background-color: #EDF2F6;
+   padding: 10px 0 40px 0;
+}
+
+.page-about__change-items{
+   margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 30px;
+   column-gap: 105px;
+}
+
+.page-about__change-item{
+   display: flex;
+   align-items: center;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+.page-about__change-item img{
+   width: 48px;
+   height: 48px;
+   object-fit: contain;
+   object-position: center;
+   margin-right: 10px;
+}
+
+.main__h a{
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 120%;
+   color: #4878A6;
+   word-wrap: break-word;
 }
