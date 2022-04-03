@@ -23,6 +23,7 @@ const clearMenuMobile = function(){
    document.querySelector('.menu-else').classList.remove('menu-else_active');
    document.querySelector('.catalog').classList.remove('catalog_active');
    document.querySelector('.menu-search').classList.remove('menu-search_active'); 
+   document.querySelector('body').classList.remove('body_overflow');
 };
 
 const setMenuMobile = function(){ 
@@ -31,19 +32,22 @@ const setMenuMobile = function(){
    {
       document.querySelector('.catalog__wrapper').classList.toggle('catalog__wrapper_active');
       document.querySelector('.menu-mobile__catalog').classList.toggle('menu-mobile__catalog_active');
-      document.querySelector('.catalog').classList.toggle('catalog_active');    
+      document.querySelector('.catalog').classList.toggle('catalog_active'); 
+      document.querySelector('body').classList.add('body_overflow');   
    }
 
    if(menuMobile.else)
    {
       document.querySelector('.catalog__wrapper').classList.toggle('catalog__wrapper_active');  
-      document.querySelector('.menu-else').classList.toggle('menu-else_active'); 
+      document.querySelector('.menu-else').classList.toggle('menu-else_active');
+      document.querySelector('body').classList.add('body_overflow'); 
    }
 
    if(menuMobile.search)
    {
       document.querySelector('.catalog__wrapper').classList.toggle('catalog__wrapper_active');  
       document.querySelector('.menu-search').classList.toggle('menu-search_active'); 
+      document.querySelector('body').classList.add('body_overflow');
    }
 
 }; 
