@@ -1,13 +1,9 @@
 let passwordVisiableEnter = false;
 
-const offScroll = function(){
-   window.scrollTo(0, 0);
-}
 
 //Modal Enter
 document.querySelectorAll('.menu-profile ul li').forEach((element)=>{
       element.addEventListener('click', ()=>{
-      window.addEventListener(('scroll'), offScroll);
       document.getElementById('id-modal-enter').classList.add('modal_active');
       document.querySelector('.menu-profile').classList.remove('menu-profile_active');
    });
@@ -16,7 +12,6 @@ document.querySelectorAll('.menu-profile ul li').forEach((element)=>{
 
 document.getElementById('id-modal-enter-exit').addEventListener('click', ()=>{
    document.getElementById('id-modal-enter').classList.remove('modal_active');
-   window.removeEventListener('scroll', offScroll);
 });
 
 //modal registr
@@ -29,7 +24,6 @@ document.getElementById('modal__enter-registr_ID').addEventListener('click', ()=
 
 document.getElementById('id-modal-registr-exit').addEventListener('click', ()=>{
    document.getElementById('id-modal-regidtr').classList.remove('modal_active');
-   window.removeEventListener('scroll', offScroll);
 });
 
 document.getElementById('modal__i-already_asign-ID').addEventListener('click', ()=>{
