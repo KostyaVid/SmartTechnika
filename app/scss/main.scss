@@ -167,6 +167,7 @@ a{
    height: 54px;
    transition: background-color 0.2s ease-out;
    -webkit-transition: background-color 0.2s ease-out;
+   border-radius: 4px;
    cursor: pointer;
    &:hover{
       background-color: #DAE4ED;

@@ -1,12 +1,19 @@
 let passwordVisiableEnter = false;
 
 //Modal Enter
+document.querySelectorAll('.menu-profile ul li').forEach((element)=>{
+      element.addEventListener('click', ()=>{
+      document.getElementById('id-modal-enter').classList.add('modal_active');
+      document.querySelector('.menu-profile').classList.remove('menu-profile_active');
+      document.querySelector('body').classList.add('body_overflow');
+   });
+});
 
 document.querySelector('.menu-profile__enter').addEventListener('click', ()=>{
    document.getElementById('id-modal-enter').classList.add('modal_active');
    document.querySelector('.menu-profile').classList.remove('menu-profile_active');
    document.querySelector('body').classList.add('body_overflow');
-})
+});
 
 document.getElementById('id-modal-enter-exit').addEventListener('click', ()=>{
 document.getElementById('id-modal-enter').classList.remove('modal_active');
