@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SMART Техника</title>
+   <link rel="shortcut icon" href="./images/src/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="./css/font-awesome.min.css">
+   <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+   />
+   <link rel="stylesheet" href="./css/app.min.css">
+</head>
+<body>
+   <!-- HEADER -->
+
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__logo"><img src="./images/dest/logo.png" alt="Smart техника"></div>
+         <div class="header__menu">
+            <div class="header__about">
+               <div class="header__phone_1"><a href="tel:+78126605054">+7 (812) 660-50-54</a></div>
+               <div class="header__phone_2"><a href="tel:+79581119503">+7 (958) 111-95-03</a></div>
+               <div class="header__schedule">Пн-вс: с 10:00 до 21:00</div>
+            </div>
+            <div class="header__inputs">
+               <div class="header__search"><input type="text" placeholder="Поиск" class="header__search_input"></div>
+               <div class="header__eye header__click"><img src="./images/dest/icons/header/eye_empty.svg" alt="Отслеживание"></div>
+               <div class="header__like header__click"><img src="./images/dest/icons/like_empty.svg" alt="Нравиться"></div>
+               <div class="header__compare header__click"><img src="./images/dest/icons/compare.svg" alt="Сравнение"></div>
+               <div class="header__cart header__click"><img src="./images/dest/icons/basket/cart_empty.svg" alt="Корзина"></div>
+               <div class="header__enter header__button">Войти</div>
+            </div>
+         </div>
+      </header>
+      <div class="menu-profile">
+         <ul>
+            <li><a href="#"><div>Общие сведения</div></a></li>
+            <li><a href="#"><div>Личные данные</div></a></li>
+            <li><a href="#"><div>История покупок</div></a></li>
+            <li><a href="#"><div>Избранное</div></a></li>
+            <li><a href="#"><div>Сменить пароль</div></a></li>
+            <li class="menu-profile__enter">Войти</li>
+            <li class="menu-profile__exit menu-profile__enter__active">Выйти</li>
+         </ul>
+      </div>
+   </div>
+
+     <!-- menu -->
+
+   <menu>
+      <div class="menu__wrapper">
+         <div class="menu__container">
+            <div class="menu__catalog">
+               <img src="./images/dest/icons/menu_icon.svg" alt="Меню" class="menu__icon">
+               <div class="catalog__name">Каталог товаров</div>
+            </div>
+            <nav class="menu__nav">
+               <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Рассрочка 0|0|18</a></li>
+                  <li><a href="#">Сервис и гарантия</a></li>
+                  <li><a href="#">Опт/дропшиппинг</a></li>
+                  <li><a href="#">Контакты</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </menu>
+
+   <div class="menu-mobile">
+      <a href="./index.html" class="menu-mobile__home menu-mobile__item">
+         <img src="./images/dest/icons/home.png" alt="Главная Страница">
+         <p>Главная</p>
+      </a>
+      <div class="menu-mobile__catalog menu-mobile__item">
+         <img src="./images/dest/icons/menu_icon.svg" alt="Каталог">
+         <p>Каталог</p>
+      </div>
+      <div class="menu-mobile__cart menu-mobile__item">
+         <img src="./images/dest/icons/basket/cart-icon.svg" alt="Корзина">
+         <p>Корзина</p>
+      </div>
+      <div class="menu-mobile__search menu-mobile__item">
+         <img src="./images/dest/icons/search.svg" alt="Поиск">
+         <p>Поиск</p>
+      </div>
+      <div class="menu-mobile__yet menu-mobile__item">
+         <img src="./images/dest/icons/yet.png" alt="Ещё">
+         <p>Ещё</p>
+      </div>
+   </div>
+
+
+   <div class="catalog__wrapper">
+      <div class="catalog">
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/gyro.svg" alt="Гироскутеры">
+            <div>Гироскутеры</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/kick_scooter.svg" alt="Самокаты">
+            <div>Самокаты</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/monocoles.svg" alt="Моноколеса">
+            <div>Моноколеса</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/segway.svg" alt="Сигвеи и мини-сигвеи">
+            <div>Сигвеи и мини-сигвеи</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/scooter.svg" alt="Электроскутеры">
+            <div>Электроскутеры</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/bike.svg" alt="Электровелосипеды">
+            <div>Электровелосипеды</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/skate.svg" alt="Электроскейты">
+            <div>Электроскейты</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/car.svg" alt="Электромобили">
+            <div>Электромобили</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/headphones.svg" alt="Аксессуары">
+            <div>Аксессуары</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/gamepad.svg" alt="Умные игрушки">
+            <div>Умные игрушки</div>
+         </a>
+         <a href="#" class="catalog__item">
+            <img src="./images/dest/icons/menu/watch.svg" alt="Smart Watch">
+            <div>Smart Watch</div>
+         </a>
+      </div>
+
+      <div class="menu-else">
+         <h3 class="menu-else__title">Ещё</h3>
+         <a href="#" class="menu-else__item"><div>О компании</div></a>
+         <a href="#" class="menu-else__item"><div>Акции</div></a>
+         <a href="#" class="menu-else__item"><div>Рассрочка 0–0-12</div></a>
+         <a href="#" class="menu-else__item"><div>Сервис и ремонт</div></a>
+         <a href="#" class="menu-else__item"><div>Опт/дропшиппинг</div></a>
+         <a href="#" class="menu-else__item"><div>Контакты</div></a>
+      </div>
+
+      <div class="menu-search">
+         <h3 class="menu-else__title">Поиск</h3>
+         <input type="search" name="search" id="ID_search_menu_mobile" class="menu-search__search" placeholder="Введите запрос, например «Smart balance»">
+         <div class="menu-else__buttons">
+            <button class="menu-search__button_cencel header__button">Выйти</button>
+            <button class="menu-search__button header__button">Искать</button>
+         </div>
+      </div>
+
+   </div>
+<!-- MODAL ENTER -->
+<div class="modal" id="id-modal-enter">
+   <div class="modal__overlay">
+      <div class="modal__window">
+         <div class="modal__header">
+            <h3 class="modal__title">Вход</h3>
+            <img src="./images/dest/icons/modal_exit.svg" alt="Выйти" class="modal__icon-close" id="id-modal-enter-exit">
+         </div>
+         <div class="modal__wrapper">
+            <form action=""handler.php"">
+               <div class="modal__name-input">Эл. почта или телефон</div>
+               <input type="email" class="modal__input-email mt8">
+               <div class="modal__name-input  mt20">Пароль</div>
+               <div class="modal__passord">
+                  <input type="password" class="modal__input-password mt8">
+                  <div class="modal__password_eye"></div>
+               </div>
+               <a href="#" class="modal__forgot mt10">Забыли пароль?</a>
+               <div class="modal__check-me mt20">
+                  <label for="element" class="check__label">
+                     <span>Запомнить меня</span>
+                  </label>
+               </div>
+               <button class="modal__button_enter mt20">Войти</button>
+            </form>
+            <div class="modal__sign-enter mt20" id="modal__enter-registr_ID">Зарегистрироваться</div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- MODAL REGIST-->
+<div class="modal" id="id-modal-regidtr">
+   <div class="modal__overlay">
+      <div class="modal__window">
+         <div class="modal__header">
+            <h3 class="modal__title">Регистрация</h3>
+            <img src="./images/dest/icons/modal_exit.svg" alt="Выйти" class="modal__icon-close" id="id-modal-registr-exit">
+         </div>
+         <div class="modal__wrapper">
+            <form action=""handler.php"">
+               <div class="modal__name-input">Имя</div>
+               <input type="text" class="modal__input-email mt8">
+               <div class="modal__name-input mt20">Эл. почта или телефон</div>
+               <input type="email" class="modal__input-email mt8">
+               <div class="modal__name-input  mt20">Придумайте пароль</div>
+               <div class="modal__passord">
+                  <input type="password" class="modal__input-password mt8">
+                  <div class="modal__password_eye"></div>
+               </div>
+               <p class="modal__user-agreement mt10">Регистрируясь, вы соглашаетесь <a href="#">с пользовательским соглашением</a></p>
+               <button class="modal__button_enter mt20">Зарегистрироваться</button>
+            </form>
+            <p class="modal__sign-enter mt20" id="modal__i-already_asign-ID">Я уже зарегистрирован</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- menu-back -->
+
+<section class="menu-back wrapper">
+   <div class="menu-back__nav">
+      <a href="./index.html">Главная</a>
+      <i class="fa fa-caret-right" aria-hidden="true"></i>
+      <span>О нас</span>
+   </div>
+</section>
+
+<!-- main -->
+<main>
+   <div class="wrapper">
+      <div class="page-main">
+         <h1 class="page-main__title">О нас</h1>
+         <div class="page-main__text">
+            <p class="main__p">Официальный представитель производителей эксклюзивного электротранспорта и Смарт-Техники, Созданная в 2015 году компания Смарт-Техника стала одним из первых дистрибьютеров персонального электротранспорта в России и уже более трёх лет является официальным представителем таких производителей эксклюзивного электронного транспорта, как Yamato, SmartONE, HALTEN и Kugoo</p>
+            <h3 class="main__h">Постоянно растущая и развивающаяся Компания</h3>
+            <p class="main__p">На сегодняшней день Компания Смарт-Техника обладает собственным розничным магазинами в г. Санкт-Петербурге, официальными представительствами в различных районах г. СПб и Ленобласти, сетью складов в Петербурге, Москве и других крупных городах России. Мы постоянно растём и развиваемся. Доставка наших товаров осуществляется во все регионы Страны!</p>
+            <h3 class="main__h">Самый большой выбор персонального электротранспорта</h3>
+            <p class="main__p">Самый большой выбор персонального электротранспорта представлен в выставочных залах Смарт-Техника по адресам:</p>
+            <p class="main__p">ул. Ленсовета 81;</p>
+            <p class="main__p">ул. Дыбенко 23к1;</p>
+            <p class="main__p">пр. Энгельса 113 к 2.</p>
+            <p class="main__p">Расширение ассортимента происходит стабильно раз в полгода, и вы всегда найдёте у нас самые эксклюзивные модели электронного транспорта нового поколения!</p>
+         </div>
+      </div>
+   </div>
+
+   <div class="page-about__change">
+      <div class="wrapper">
+         <h3 class="main__h">Всегда в наличии большой выбор:</h3>
+         <div class="page-about__change-items">
+            <div class="page-about__change-item">
+               <img src="./images/dest/icons/menu/gyro.svg" alt="Гироскутуры">
+               гироскутеров
+            </div>
+            <div class="page-about__change-item">
+               <img src="./images/dest/icons/menu/segway.svg" alt="sigway">
+               сигвеев и мини сигвеев
+            </div>
+            <div class="page-about__change-item">
+               <img src="./images/dest/icons/menu/kick_scooter.svg" alt="scooter">
+               электросамокатов, стандартных и полноприводных
+            </div>
+            <div class="page-about__change-item">
+               <img src="./images/dest/icons/menu/skate.svg" alt="skate">
+               электроскейтов
+            </div>
+            <div class="page-about__change-item">
+               <img src="./images/dest/icons/menu/bike.svg" alt="bike">
+               электровелосипедов
+            </div>
+            <div class="page-about__change-item">
+               <img src="./images/dest/icons/icon-more.svg" alt="more">
+               и многое другое
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="wrapper">
+      <div class="page-main">
+         <div class="page-main__text">
+            <h3 class="main__h">Опытный и высококвалифицированный персонал</h3>
+            <p class="main__p">В компании работают опытные высококвалифицированные сотрудники, всегда готовые помочь вам с выбором персонального транспортного средства, ответить на все возможные вопросы и научить кататься на выбранной вами модели</p>
+            <h3 class="main__h">Возможность тест драйва</h3>
+            <p class="main__p">Благодаря месторасположению и инфраструктуре, прилегающей к магазинам территорий, наши посетители могут перед оформлением покупки пройти тест-драйв на любом из представленных в зале транспортных средств. Для тест-драйва крупной техники необходима предварительная запись. Её можно осуществить по телефону: +7 (812) 509-23-43 или через консультанта в магазине.</p>
+            <h3 class="main__h">Цель и миссия компании Смарт-Техника.рф</h3>
+            <p class="main__p">Цель компании Смарт Техника — в 2020 году стать самым крупным магазином по продаже персонального электротранспорта в Санкт-Петербурге. А также открывать свои филиалы во всех крупных городах России, что происходит уже сейчас.</p>
+            <p class="main__p">Миссия компании Смарт Техника — познакомить россиян с экологически чистыми видами транспорта и улучшить экологию Страны! Мы надеемся не просто привить нашей нации любовь к ЭКО-транспорту, а создать в стране новую культуру передвижения.</p>
+            <h3 class="main__h">Мы всегда рады взаимовыгодному сотрудничеству. Свои предложения отправляйте <a href="email:smartfamily.info@yandex.ru">smartfamily.info@yandex.ru</a></h3>
+         </div>
+      </div>
+   </div>
+</main>
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+   <div class="wrapper">
+      <div class="footer__content">
+         <div class="footer__about footer__maxWidth-column">
+            <img src="./images/dest/logo.png" alt="Смарт техника" class="footer__logo">
+            <a href="tel:+79581119503" class="footer__tel mt20">+7 (958) 111-95-03</a>
+            <a href="tel:+78126605054" class="footer__tel mt10">+7 (812) 660-50-54</a>
+            <div class="footer__schedular mt10">Пн-вс: с 10:00 до 21:00</div>
+            <div class="footer__address mt20">Проспект Стачек 67 к.5</div>
+            <div class="footer__address">Лиговский проспект 205</div>
+            <div class="footer__address">Гражданский проспект, 116 к.5</div>
+         </div>
+         <div class="footer__forClients footer__maxWidth-column">
+            <h4 class="footer__title">Для клиента</h4>
+            <nav class="footer__nav mt20">
+               <ul>
+                  <li><a href="#">Как купить</a></li>
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Кредит</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                  <li><a href="#">Вопросы и ответы (F.A.Q.)</a></li>
+                  <li><a href="#">Сервис и гарантия</a></li>
+               </ul>
+            </nav>
+         </div>
+         <div class="footer__forClients footer__maxWidth-column">
+            <h4 class="footer__title">О магазине</h4>
+            <nav class="footer__nav mt20">
+               <ul>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Наши преимущества</a></li>
+                  <li><a href="#">История компании</a></li>
+                  <li><a href="#">Сотрудничество</a></li>
+                  <li><a href="#">Партнёрская программа</a></li>
+                  <li><a href="#">Вакансии</a></li>
+               </ul>
+            </nav>
+         </div>
+         <div class="footer__forClients footer__maxWidth-column">
+            <h4 class="footer__title">Сотрудничество</h4>
+            <nav class="footer__nav mt20">
+               <ul>
+                  <li><a href="#">Оптом</a></li>
+                  <li><a href="#">Дропшиппинг</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer__sub-footer mt20">
+         <div class="footer__rights">SmartТехника © 2021 Все права защищены</div>
+         <div class="footer__icons">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-vk" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+         </div>
+         <div class="footer__designer">Разработка: websl.ru</div>
+      </div>
+   </div>
+</footer>
+  
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>
