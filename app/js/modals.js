@@ -29,6 +29,7 @@ document.getElementById('modal__enter-registr_ID').addEventListener('click', ()=
 
 document.getElementById('id-modal-registr-exit').addEventListener('click', ()=>{
    document.getElementById('id-modal-regidtr').classList.remove('modal_active');
+   window.removeEventListener('scroll', offScroll);
 });
 
 document.getElementById('modal__i-already_asign-ID').addEventListener('click', ()=>{
